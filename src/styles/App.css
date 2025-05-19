@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  background-color:  #0f1d2a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+footer.footer {
+  background-color:  #0f1d2a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.home, .about, .skills, .projects, .contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+  color : #9c9898
+}
+
+a:hover {
+  color: #d86d6d;
+}

@@ -1,0 +1,51 @@
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #0f1d2a;
+}
+
+nav.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+}
+
+nav.navbar a:hover {
+    color: #ed6363;
+}
+
+nav.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ed6363;
+
+}
+
+nav.navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+/* Mobil düzen */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    /* Son iki öğeyi yan yana yap */
+    .nav-links a:nth-last-child(2),
+    .nav-links a:nth-last-child(1) {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+    }
+}

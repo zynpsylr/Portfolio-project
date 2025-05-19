@@ -1,0 +1,15 @@
+.about {
+    background-color: #0f1d2a;
+    padding: 3rem;
+    color: #f1f5f9;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.about h1 {
+    color: #ed6363;
+}
+

@@ -1,0 +1,100 @@
+.projects {
+
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-color: #0f1d2a;
+    box-sizing: border-box;
+}
+
+.project-grid {
+    width: 100%;
+    max-width: 1200px; /* İçerik max genişlik */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+.project-card {
+    display: flex;
+    width: 95%; /* Kart ekran içeriğinde tam genişlik */
+    background:  #0f1d2a;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    color:#e2e8f0;
+    align-items: center;
+}
+
+.project-image {
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+
+}
+.project-card a {
+    color: #f15b5b;
+
+}
+
+.project-content {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.project-content h3 {
+    font-size: 1.2rem;
+    color:#f35757;
+}
+
+
+
+.project-card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column !important;
+    }
+    .project-image {
+        display: none;  /* Mobilde fotoğraf gizlendi */
+    }
+    .project-card {
+        background-color: #1e293b;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .project-card {
+        width: 80%;            /* Daha geniş yaptım */
+        max-width: 1100px;     /* Max genişlik biraz artırıldı */
+        min-height: 350px;     /* Minimum yükseklik eklendi */
+        gap: 2.5rem;           /* İçerik arası boşluk artırıldı */
+    }
+    .project-image img {
+        width: 75%;            /* Görsel biraz daha büyütüldü */
+        max-height: 350px;     /* Yükseklik artırıldı */
+    }
+    .project-content {
+        padding: 1.5rem 3rem;  /* İçerik padding genişletildi */
+        min-height: 350px;     /* Minimum yükseklik verildi */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
